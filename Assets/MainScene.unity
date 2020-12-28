@@ -296,6 +296,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1844164224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1844164226}
+  - component: {fileID: 1844164225}
+  m_Layer: 0
+  m_Name: BallFactory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1844164225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844164224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed5a9dfadb6c434fa8943abc22322de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 632927975557101795, guid: 3b27c770b2c9647b39572b08b3708eb9, type: 3}
+--- !u!4 &1844164226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844164224}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2040010629
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,9 +444,8 @@ GameObject:
   - component: {fileID: 2117907488}
   - component: {fileID: 2117907487}
   - component: {fileID: 2117907486}
-  - component: {fileID: 2117907485}
-  - component: {fileID: 2117907491}
   - component: {fileID: 2117907489}
+  - component: {fileID: 2117907485}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -496,16 +539,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f29f53e9fa7342c5af371939b1b53a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
---- !u!114 &2117907491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2117907484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ad19d8231d5c40c4843582ce73ca0fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  speed: 100
