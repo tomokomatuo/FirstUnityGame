@@ -1,6 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 
 public class BallScript : MonoBehaviour
 {
@@ -22,7 +23,12 @@ public class BallScript : MonoBehaviour
         if(collision.gameObject.CompareTag("Paddle"))
         {
             // Destory(gameObject);
-            Destory (gameObject);
+            // UnityEngine.Object.Destroy(gameObject);
+            collision.gameObject.transform.localScale -= new Vector3 (Random.Range(0.2f, 1.0f), 0f, 0f);
+            if(collision.gameObject.transform.localScale.x < 1.0f)
+            {
+                collision.gameObject.transform.localScale = new Vector3 (1.0f, 1.0f, 1.0f);
+            }
         }
     }
 }
