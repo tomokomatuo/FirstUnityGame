@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class BallScript : MonoBehaviour
 {
@@ -18,8 +18,9 @@ public class BallScript : MonoBehaviour
         transform.position += new Vector3(0f, 0f, -1 * speed * Time.deltaTime);
         if(transform.position.z < -13.0f)
         {
-            Debug.Log("Game Over");
-            Time.timeScale = 0;
+            // Debug.Log("Game Over");
+            // Time.timeScale = 0;
+            SceneManager.LoadScene("GameOverScene");
         }
     }
 
