@@ -16,6 +16,11 @@ public class BallScript : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(0f, 0f, -1 * speed * Time.deltaTime);
+        if(transform.position.z < -13.0f)
+        {
+            Debug.Log("Game Over");
+            Time.timeScale = 0;
+        }
     }
 
     private void OnCollisionEnter (Collision collision)
